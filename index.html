@@ -6,8 +6,20 @@
     <title>Sathishkumar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./colors/color1.css">
+    <!--------- style switcher -------->
+    <link rel="stylesheet" href="./colors/color1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./colors/color2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./colors/color3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./colors/color4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./colors/color5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./styles/style-switcher.css">
+    
 </head>
 <body>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./style-switcher.js"></script>
+    <script defer src="./script.js"></script>
     <!--Main container start-->
     <div class="main-container">
         <!--Aside start-->
@@ -19,18 +31,18 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <!--Aside End-->
         <!--main content start-->
         <div class="main-content">
             <!--Home section start-->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -47,7 +59,7 @@
             </section>
             <!--Home section end-->
             <!--About section start-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -91,7 +103,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons">
-                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="downloaded_sathishResume.jpg" class="btn padd-15" download="">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
@@ -180,7 +192,7 @@
                                 </div>
                                 <div class="experience padd-15">
                                     <h3 class="title">Experience</h3>
-                                    <div class="timeline-box padd-15">
+                                    <div class="timeline-box">
                                         <div class="timeline shadow-dark">
                                             <!--TimeLine Item-->
                                             <div class="timeline-item">
@@ -201,7 +213,7 @@
             </section>
             <!--About section end-->
             <!--services section start-->
-            <section class="service section">
+            <section class="service section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -247,7 +259,7 @@
             </section>
             <!--services section end-->
             <!--portfolio section start-->
-                <section class="portfolio section">
+                <section class="portfolio section" id="portfolio">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -275,7 +287,7 @@
                 </section>
             <!--portfolio section end-->
             <!--Contact section start-->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -304,7 +316,7 @@
                     <!--Contact Info item end-->
                 </div>
                 <h3 class="contact-title padd-15">FEEL FREE TO SPEAK</h3>
-                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGE</h4>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE PERSON</h4>
                 <!-- ------- contact form----------->
                 <div class="row"> 
                     <div class="contact-form padd-15">
@@ -350,5 +362,24 @@
         <!--main content end-->
     </div>
     <!--Main container End-->
+    <!--Style swicher start-->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+    <!--Style swicher end-->
+
 </body>
 </html>
