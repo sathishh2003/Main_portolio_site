@@ -4,3 +4,4 @@ let typed = new Typed(".typing",{
     BackSpeed:60,
     loop:true
 });
+AOS.init();

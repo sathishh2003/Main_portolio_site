@@ -162,7 +162,7 @@ ul{
     position: relative;
 }
 .aside .logo a span{
-    font-family: "Libre Baskerville", serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 40px;
 
 }
@@ -252,7 +252,10 @@ ul{
     display: flex;
     color:var(--text-black-900);
     background-color: var(--bg-black-100);
-
+}
+.home-img img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .home .home-info{
     flex: 0 0 60%;
@@ -280,6 +283,7 @@ h3.my-profession{
 }
 .home .home-img img{
     height: 400px;
+    transition: 0.5s;
 } 
 .typing{
     color:var(--skin-color);
@@ -482,6 +486,7 @@ h3.my-profession{
 
 .service{
     background-color: var(--bg-black-100);
+    min-height: 80vh;
 }
 .service ,.container{
     padding-bottom: 40px;
@@ -553,8 +558,8 @@ h3.my-profession{
     font-weight:500;
 }
 .portfolio .portfolio-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin-bottom: 30px;
 }
 .portfolio .portfolio-item-inner{
@@ -573,8 +578,8 @@ h3.my-profession{
     background: var(--bg-black-100);
 }
 .contact .contact-info-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 25%;
+    max-width: 25%;
     text-align: center;
 }
 .contact .contact-info-item .icon{
