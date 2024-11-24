@@ -166,6 +166,16 @@ ul{
     font-size: 40px;
 
 }
+
+.btn:hover{
+border:2px solid var(--skin-color);
+background-color: transparent;
+color:var(--skin-color);
+transition: .5s ease-in;
+}
+.btn{
+    transition: .5s ease-in;
+}
 .aside .logo a::before{
     content: '';
     position:absolute;
@@ -413,6 +423,7 @@ h3.my-profession{
     height: 100%;
     border-radius: 4px;
     background-color: var(--skin-color);
+    transition: 2s;
 }
 .about .about-content .skills .skill-item .skill-percent{
     position: absolute;
