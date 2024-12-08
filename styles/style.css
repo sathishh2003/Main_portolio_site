@@ -116,7 +116,7 @@ ul{
 .btn{
     font-size: 16px;
     font-weight: 500;
-    padding:10px 30px;
+    padding:5px 20px;
     color:white;
     border-radius: 40px;
     display: inline-block;
@@ -505,6 +505,9 @@ h3.my-profession{
     color: var(--tetx-black-700);
 }
 
+.portfolio-item-inner{
+    box-shadow: 1px 1px 15px var(--skin-color);
+}
 /*-------- services-----------*/
 
 .service{
@@ -684,7 +687,12 @@ h3.my-profession{
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }   
+    .row .home-info .name{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:991px) {
